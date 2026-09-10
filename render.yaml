@@ -3,7 +3,7 @@ services:
     name: docchat-server
     runtime: node
     rootDir: server
-    buildCommand: npm install
+    buildCommand: npm install --legacy-peer-deps
     startCommand: node index.js
     envVars:
       - key: GOOGLE_API_KEY
