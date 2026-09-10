@@ -1,8 +1,8 @@
-﻿import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const SESSION_ID = "session-" + Math.random().toString(36).slice(2, 8);
 
 function FileIcon() {
